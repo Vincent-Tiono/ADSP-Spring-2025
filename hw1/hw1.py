@@ -111,6 +111,7 @@ def hw01():
     plt.subplot(212)
     x = np.arange(0, N)
     plt.stem(x, h, basefmt=" ")
+    plt.axhline(0, color='r', linestyle='-')
     plt.title('Impulse Response')
     plt.xlabel('Time index')
     plt.xlim([-1, N])
