@@ -155,7 +155,7 @@ def generate_music(notation_sequence: list, duration_sequence: list, output_file
     complete_audio = np.concatenate(audio_segments)
     
     # Save to file
-    print(f"Generated {output_filename} with BPM: {tempo}")
+    print(f"Generated {output_filename}.wav with BPM: {tempo}")
     # play_audio(complete_audio, sample_rate)  # Uncomment to play audio
     sf.write(f'{output_filename}.wav', complete_audio, sample_rate)
 
